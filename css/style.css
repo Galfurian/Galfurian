@@ -102,6 +102,10 @@ div.personal {
     transform: scale(1.1);
 }
 
+[id] {
+    scroll-margin-top: 20px;
+}
+
 /*
 ===================================
 PANEL

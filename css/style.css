@@ -1,0 +1,99 @@
+body {
+    font-family: 'IBM Plex Sans', 'Lato', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #292c33;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: #222;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #0055aa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+.personal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.myphoto {
+    background-image: url('../docs/foto.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+.social i {
+    margin: 0 0.2rem;
+    transition: transform 0.2s ease;
+}
+
+.social i:hover {
+    transform: scale(1.1);
+}
+
+.panel {
+    margin-bottom: 2rem;
+}
+
+ul {
+    padding-left: 1.2em;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.b_title {
+    font-weight: 600;
+}
+
+footer {
+    font-size: 0.9em;
+    color: #777;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+div.personal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 1.4em;
+    grid-auto-flow: dense;
+}
+div.personal > div:nth-child(1) {
+    grid-column: 2;
+    text-align: center;
+    padding-top: 1.5em;
+}

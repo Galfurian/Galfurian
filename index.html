@@ -13,6 +13,23 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleTOC() {
+            document.getElementById('toc').classList.toggle('show');
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const toc = document.getElementById('toc');
+            const links = toc.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", function () {
+                    // Only collapse on small screens
+                    if (window.innerWidth <= 768) {
+                        toc.classList.remove("show");
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -22,9 +39,12 @@
 
     <hr />
 
+    <!-- TOC toggle button (only visible on small screens) -->
+    <button class="toc-toggle" onclick="toggleTOC()">☰ Menu</button>
+
     <div class="main-layout">
         <!-- Table of Contents -->
-        <nav class="toc">
+        <nav class="toc" id="toc">
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#publications">Publications</a></li>
@@ -43,7 +63,7 @@
             <div class="personal">
                 <!-- RIGHT column: Photo + social links -->
                 <div class="photo-block">
-                    <div class="myphoto"></div>
+                    <div class="myphoto"></div><br>
                     <span class="social">
                         <a href="https://scholar.google.it/citations?user=J_1JzB4AAAAJ" target="_blank"
                             aria-label="Google Scholar">

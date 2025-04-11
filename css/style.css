@@ -33,6 +33,7 @@ h2 {
 
 b {
     color: #445886;
+    font-weight: 600;
 }
 
 a {
@@ -50,22 +51,31 @@ hr {
     margin: 2rem 0;
 }
 
-.personal {
-    display: flex;
+div.personal {
+    display: block;
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.photo-block {
+    float: right;
+    width: 200px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .myphoto {
-    background-image: url('../docs/foto.png');
-    background-size: cover;
-    background-position: center;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    flex-shrink: 0;
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #292c33;
+    border-radius: 100px;
+    background: url('../docs/foto.png') no-repeat center;
+    background-size: 180px;
+    margin-bottom: 10px;
 }
 
 .social i {
@@ -113,16 +123,4 @@ footer {
     color: #777;
     text-align: center;
     margin-top: 3rem;
-}
-
-div.personal {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 1.4em;
-    grid-auto-flow: dense;
-}
-div.personal > div:nth-child(1) {
-    grid-column: 2;
-    text-align: center;
-    padding-top: 1.5em;
 }

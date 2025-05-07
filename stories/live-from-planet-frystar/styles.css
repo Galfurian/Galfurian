@@ -156,45 +156,6 @@ hr {
     margin: 0px;
 }
 
-.section-header {
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--card-background);
-    border: 1px solid var(--card-border);
-    color: var(--text-color);
-}
-
-.equipment-card {
-    background-color: var(--card-background);
-    border: 1px solid var(--card-border);
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.equipment-card h3 {
-    margin-top: 0;
-    border-bottom: 2px solid gray;
-    padding-bottom: 0.5rem;
-}
-
-.equipment-card h4 {
-    margin: 0;
-}
-
-.equipment-card ul {
-    margin: 0.1rem;
-}
-
-.equipment-card li {
-    margin: 0.1rem;
-}
-
 /* Apply link colors */
 main a {
     color: var(--link-color);
@@ -207,4 +168,51 @@ main a:visited {
 
 main a:hover {
     text-decoration: underline;
+}
+
+.book-title {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5em;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #00aaff, #ff00cc);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7), 0 0 60px rgba(255, 0, 255, 0.7);
+    padding: 40px 0;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.message {
+    border-left: 3px solid #4444FF;
+    padding-left: 15px;
+    font-weight: bold;
+    color: #88aaff;
+}
+
+section {
+    text-align: justify;
+
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section strong {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
 }

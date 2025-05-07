@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enrico Fraccaroli</title>
+    <meta name="description"
+        content="Personal website of Enrico Fraccaroli, Postdoctoral Researcher in Cyber-Physical Systems and Fault Simulation.">
+    <meta name="author" content="Enrico Fraccaroli">
+    <link rel="stylesheet" href="css/personal_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleTOC() {
+            document.getElementById('toc').classList.toggle('show');
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const toc = document.getElementById('toc');
+            const links = toc.querySelectorAll("a");
+            links.forEach(link => {
+                link.addEventListener("click", function () {
+                    // Only collapse on small screens
+                    if (window.innerWidth <= 768) {
+                        toc.classList.remove("show");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>Enrico Fraccaroli</h1>
+    </div>
+
+    <hr />
+    <div style="text-align:center; margin-bottom: 1em;">
+        <a href="index.html">
+            <button class="tab-toggle active-tab">Switch to Academic Page</button>
+        </a>
+    </div>
+
+    <!-- TOC toggle button (only visible on small screens) -->
+    <button class="toc-toggle" onclick="toggleTOC()">☰ Menu</button>
+
+    <div class="main-layout">
+        <!-- Table of Contents -->
+        <nav class="toc" id="toc">
+            <ul>
+                <li><a href="#stories">Stories</a></li>
+            </ul>
+        </nav>
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- stories -->
+            <div class="panel" , id="stories">
+                <h2>Stories</h2>
+
+                <h1><a href="stories/arcane-fang/index.html" target="_blank">Arcane Fang</a></h1>
+
+                In a world scarred by the fall of the ancient Primekin, where ruins pulse with forgotten energy
+                and whispered secrets, Calwyn, a human scholar burdened by an unnatural power, joins forces with
+                Vera, a fierce Beast-kin warrior searching for her missing mother.
+                <br><br>
+                Together, they journey through crumbling temples and Aether-infused chambers, uncovering relics of a
+                civilization that once bent reality to its will, and paid the price.
+                <br><br>
+                As cultists harness ancient rituals and blood magic to awaken Primekin power, Calwyn and Vera
+                must confront not only their enemies, but the truths buried within themselves. When Calwyn's
+                dormant transformation erupts in a moment of desperation, the lines between man and monster
+                blur. In a race against time and terror, the fate of both their peoples may hinge on what they
+                discover in the heart of the ruins, and how much of themselves they're willing to sacrifice.
+                <hr />
+
+                <h1><a href="stories/live-from-planet-frystar/index.html" target="_blank">Live from Planet Frystar</a>
+                </h1>
+                Galek Zim never wanted to be a mechanic.
+                He especially didn't want to inherit a collapsing repair shop on a frozen wasteland of a planet, or hear a smug, omniscient voice narrating his every misstep.<br><br>
+                But when gremlins unionize, customers demand the impossible, and his landlord tries to monetize pest infestations, Galek realizes two things:  1) he might be losing his mind, and 2) that might be the only way to survive this job.<br><br>
+                A sci-fi satire about bad decisions, reluctant heroism, and the unbearable weight of being narratable.
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Enrico Fraccaroli. All rights reserved.</p>
+        <p>This story is the intellectual property of the author. Unauthorized reproduction, distribution, or adaptation
+            is strictly prohibited and may be subject to legal action.</p>
+    </footer>
+</body>
+
+</html>

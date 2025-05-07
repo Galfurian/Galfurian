@@ -1,0 +1,210 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #121212;
+    --card-background: #f4f4f4;
+    --card-border: #dddddd;
+    --main-background: #ffffff;
+    --main-box-shadow: rgba(0, 0, 0, 0.2);
+    /* Link Colors */
+    --link-color: #007bff;
+    --link-visited-color: #5a5a5a;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --card-background: #1e1e1e;
+    --card-border: #333333;
+    --main-background: #333333;
+    --main-box-shadow: rgba(0, 0, 0, 0.6);
+
+    /* Link Colors for Dark Theme */
+    --link-color: #80b3ff;
+    --link-visited-color: #cccccc;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #333333;
+    color: white;
+    z-index: 1000;
+    padding: 0 1rem;
+    /* display: flex; */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+    margin: 0;
+}
+
+.header-chapter {
+    margin: 0;
+}
+
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#header-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+#font-size-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.disabled-link {
+    color: #AAAAAA;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+main {
+    max-width: 80ch;
+    margin: 6rem auto 2rem;
+    padding: 2rem;
+    background-color: var(--main-background);
+    box-shadow: 0 4px 10px var(--main-box-shadow);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    text-align: justify;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    /* Center the image if needed */
+}
+
+button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+    color: 333333;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #333333;
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: repeating-linear-gradient(to right, #ccc, #ccc 6px, transparent 6px, transparent 12px);
+    margin: 20px auto;
+}
+
+.thick-hr {
+    border: 2px solid gray;
+    margin: 20px auto;
+}
+
+.word-counter {
+    text-align: center;
+    border-radius: 1px;
+    margin: 0px;
+}
+
+.section-header {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    color: var(--text-color);
+}
+
+.equipment-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-card h3 {
+    margin-top: 0;
+    border-bottom: 2px solid gray;
+    padding-bottom: 0.5rem;
+}
+
+.equipment-card h4 {
+    margin: 0;
+}
+
+.equipment-card ul {
+    margin: 0.1rem;
+}
+
+.equipment-card li {
+    margin: 0.1rem;
+}
+
+/* Apply link colors */
+main a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+main a:visited {
+    color: var(--link-visited-color);
+}
+
+main a:hover {
+    text-decoration: underline;
+}

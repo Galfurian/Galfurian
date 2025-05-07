@@ -154,7 +154,7 @@ PANEL
 }
 
 footer {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     color: #777;
     text-align: center;
     margin-top: 3rem;
@@ -239,4 +239,25 @@ footer {
     .main-layout {
         flex-direction: column;
     }
+}
+
+.tab-toggle {
+    background-color: #445886; /* Bootstrap blue, or your preferred hex */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin: 0 6px;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-toggle.active-tab {
+    background-color: #5f90c4; /* darker blue or whatever you prefer */
+}
+
+.tab-toggle:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }

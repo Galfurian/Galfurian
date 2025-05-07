@@ -1,0 +1,263 @@
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: clamp(0.675em, 1vw + 0.5em, 1em);
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    background-color: #ffffff;
+    color: #292c33;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    color: #3e7049;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 1.0rem;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+}
+
+b {
+    color: #3e7049;
+    font-weight: 600;
+}
+
+a {
+    color: #1b7431;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: repeating-linear-gradient(to right,
+            #ccc,
+            #ccc 6px,
+            transparent 6px,
+            transparent 12px);
+    margin: 2rem 0;
+}
+
+div.personal {
+    display: block;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.photo-block {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.myphoto {
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #292c33;
+    border-radius: 100px;
+    background: url('../docs/foto.png') no-repeat center;
+    background-size: 180px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .myphoto {
+        width: 120px;
+        height: 120px;
+        background-size: 125px;
+    }
+}
+
+.social i {
+    margin: 0 0.2rem;
+    transition: transform 0.2s ease;
+}
+
+.social i:hover {
+    transform: scale(1.1);
+}
+
+[id] {
+    scroll-margin-top: 20px;
+}
+
+/*
+===================================
+PANEL
+===================================
+*/
+
+.panel {
+    background: #f8f9fb;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.2em 1.4em;
+    margin-bottom: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.panel>h2 {
+    background: #3e7049;
+    color: #fff;
+    padding: 0.4em 0.8em;
+    margin: -1.2em -1.4em 1em -1.4em;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.panel p {
+    margin: 0;
+    line-height: 17px;
+}
+
+.panel ul {
+    margin: 0;
+    padding-left: 1em;
+}
+
+.panel ul li {
+    margin-bottom: 0.5em;
+}
+
+.panel ul ul {
+    padding-left: 1.5em;
+}
+
+.panel ul ul li {
+    margin-bottom: 0.25em;
+}
+
+footer {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Main layout */
+.main-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* Main content column */
+.main-content {
+    flex-grow: 1;
+    max-width: 800px;
+}
+
+/* Table of Contents column */
+.toc {
+    width: 200px;
+    font-size: 0.9em;
+    position: sticky;
+    top: 1rem;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 0.5em;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #3e7049;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Hide TOC toggle on desktop */
+.toc-toggle {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background: #3e7049;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+/* Mobile behavior */
+@media (max-width: 768px) {
+    .toc {
+        display: none;
+        position: fixed;
+        top: 3.5rem;
+        left: 1rem;
+        background: #f7f7f7;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .toc.show {
+        display: block;
+    }
+
+    .toc-toggle {
+        display: block;
+    }
+
+    .main-layout {
+        flex-direction: column;
+    }
+}
+
+.tab-toggle {
+    background-color: #3e7049; /* Bootstrap blue, or your preferred hex */
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin: 0 6px;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-toggle.active-tab {
+    background-color: #6aa676; /* darker blue or whatever you prefer */
+}
+
+.tab-toggle:hover {
+    background-color: #256c3a; /* Darker blue on hover */
+}

@@ -2,143 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 1</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../scripts.js"></script>
+  <script src="assets/scripts/book1.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="header-top">
-            <h1 class="header-title">Live from Planet Frystar</h1>
-            <div id="header-controls">
-                <div id="font-size-buttons">
-                    <button onclick="ToggleTheme()">Toggle Mode</button>
-                    <button onclick="ChangeFontSize(-1)">Smaller Font</button>
-                    <button onclick="ChangeFontSize(0)">Default Font</button>
-                    <button onclick="ChangeFontSize(+1)">Larger Font</button>
-                </div>
-            </div>
-        </div>
-        <div id="header-top">
-            <h2 class="header-chapter">Chapter 6: Madness ensues</h2>
-            <div id="header-controls">
-                <nav>
-                    <a href="chapter5.html">&larr; Previous</a> |
-                    <a href="chapter7.html">Next &rarr;</a>
-                    (<a href="../index.html"><b>Index</b></a>)
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <h1><span class="chapter-number">Chapter 6</span><br>Madness ensues</h1>
-        <section>
-            <p>
-                A new voice <strong>cut through the chaos.</strong>
-            </p>
-            <p>
-                <strong>"WHAT. THE. HELL. IS GOING ON IN HERE?!"</strong>
-            </p>
-            <p>
-                Galek <strong>froze.</strong>
-            </p>
-            <p>
-                Oh no.
-            </p>
-            <p>
-                Oh <strong>no-no-no.</strong>
-            </p>
-            <p>
-                It was <strong>Mr. Grint, his landlord.</strong>
-            </p>
-            <img src="assets/mr_grint.png" alt="Mr. Grint">
-            <p>
-                Unfortunately for Galek, there was <strong>no time</strong> to fight the narrator further-because the
-                <strong>gremlin was still loose, and now his rent-hungry landlord had just walked in.</strong>
-            </p>
-            <p>
-                The moment Mr. Grint <strong>laid eyes on the tiny, soot-covered menace</strong>, something
-                <strong>greedy and opportunistic</strong> flickered behind his <strong>beady, predatory eyes.</strong>
-            </p>
-            <p>
-                <strong>"Oh-ho! What do we have here?"</strong>
-            </p>
-            <p>
-                Galek <strong>stiffened.</strong> "Uh, nothing. Absolutely nothing. It's fine. Everything is fine."
-            </p>
-            <p>
-                <strong>"That,"</strong> Grint said, pointing at the gremlin, <strong>"isn't just an infestation.
-                    That's a BUSINESS OPPORTUNITY."</strong>
-            </p>
-            <p>
-                Galek's stomach <strong>dropped.</strong> Oh no. Oh <strong>no-no-no.</strong>
-            </p>
-            <p>
-                Grint <strong>grinned like a scavenger spotting an unguarded buffet.</strong> "<strong>We can SELL that
-                    thing.</strong>"
-            </p>
-            <p>
-                The gremlin <strong>paused mid-ceiling-climb.</strong> "Excuse me?"
-            </p>
-            <p>
-                Grint rubbed his hands together. "I bet we could market it as <strong>'High-Tech Organic Ship
-                    Security.'</strong>
-                Rich folks LOVE exotic lifeforms. <strong>We'll say it's a state-of-the-art alarm system!</strong>"
-            </p>
-            <p>
-                The gremlin <strong>crossed its arms.</strong> "First of all? <strong>RUDE.</strong> Second of all?
-                <strong>I demand royalties.</strong>"
-            </p>
-            <p>
-                Galek pinched the bridge of his nose. "<strong>Grint, please.</strong> You can't just-"
-            </p>
-            <p>
-                "<strong>Zim.</strong>" Grint clapped a hand on his shoulder. "<strong>Let's be real.
-                    You're three weeks late on rent.</strong>"
-            </p>
-            <p>
-                Galek <strong>tensed.</strong> "I told you, <strong>I'll have the credits soon!</strong>"
-            </p>
-            <p>
-                Grint <strong>grinned wider.</strong> "Well, <em>here's</em> an easy solution. Sell the gremlin,
-                and <strong>I'll forget about the rent for a whole month.</strong>"
-            </p>
-            <p>
-                Galek <strong>blinked.</strong> "...A month?"
-            </p>
-            <p>
-                Grint nodded. "Yup. <strong>One whole month.</strong> Debt erased."
-            </p>
-            <p>
-                Galek stared at him. "<strong>One month? That's IT?!</strong>"
-            </p>
-            <p>
-                Grint shrugged. "Hey, it's <strong>a really good month.</strong>"
-            </p>
-            <p>
-                The gremlin <strong>snorted.</strong> "Wow. <strong>That's a scam, buddy.</strong>"
-            </p>
-            <p class="message">
-                "For the second time today, the gremlin-an actual living pest-pities Galek."
-            </p>
-            <p>
-                Galek <strong>pinched the bridge of his nose.</strong> "Okay. <strong>New plan.</strong>"
-            </p>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <p>
-            &copy; 2025 Enrico Fraccaroli. All rights reserved.
-        </p>
-        <p>
-            This story is the intellectual property of the author. Unauthorized reproduction, distribution, or
-            adaptation is strictly prohibited and may be subject to legal action.
-        </p>
-    </footer>
+  <header id="story-header">
+    <div class="header-row">
+      <h1 class="header-title">Live from Planet Frystar</h1>
+      <div id="font-size-buttons"> <button onclick="ToggleTheme()">Toggle Mode</button> <button
+          onclick="ChangeFontSize(-1)" title="Smaller font">A-</button> <button onclick="ChangeFontSize(0)"
+          title="Default font">A</button> <button onclick="ChangeFontSize(+1)" title="Larger font">A+</button> </div>
+    </div>
+    <div class="header-row">
+      <h2 class="header-chapter">Chapter 6: Madness ensues</h2>
+      <nav id="chapter-nav"></nav>
+    </div>
+  </header>
+  <main>
+    <h2>6. Madness ensues</h2>
+    <p> A new voice <strong>cut through the chaos.</strong> </p>
+    <p> <strong>"WHAT. THE. HELL. IS GOING ON IN HERE?!"</strong> </p>
+    <p> Galek <strong>froze.</strong> </p>
+    <p> Oh no. </p>
+    <p> Oh <strong>no-no-no.</strong> </p>
+    <p> It was <strong>Mr. Grint, his landlord.</strong> </p> <img src="assets/images/mr_grint.png" alt="Mr. Grint">
+    <p> Unfortunately for Galek, there was <strong>no time</strong> to fight the narrator further-because the
+      <strong>smoaklin was still loose, and now his rent-hungry landlord had just walked in.</strong> </p>
+    <p> The moment Mr. Grint <strong>laid eyes on the tiny, soot-covered menace</strong>, something <strong>greedy and
+        opportunistic</strong> flickered behind his <strong>beady, predatory eyes.</strong> </p>
+    <p> <strong>"Oh-ho! What do we have here?"</strong> </p>
+    <p> Galek <strong>stiffened.</strong> "Uh, nothing. Absolutely nothing. It's fine. Everything is fine." </p>
+    <p> <strong>"That,"</strong> Grint said, pointing at the smoaklin, <strong>"isn't just an infestation. That's a
+        BUSINESS OPPORTUNITY."</strong> </p>
+    <p> Galek's stomach <strong>dropped.</strong> Oh no. Oh <strong>no-no-no.</strong> </p>
+    <p> Grint <strong>grinned like a scavenger spotting an unguarded buffet.</strong> "<strong>We can SELL that
+        thing.</strong>" </p>
+    <p> The smoaklin <strong>paused mid-ceiling-climb.</strong> "Excuse me?" </p>
+    <p> Grint rubbed his hands together. "I bet we could market it as <strong>'High-Tech Organic Ship
+        Security.'</strong> Rich folks LOVE exotic lifeforms. <strong>We'll say it's a state-of-the-art alarm
+        system!</strong>" </p>
+    <p> The smoaklin <strong>crossed its arms.</strong> "First of all? <strong>RUDE.</strong> Second of all? <strong>I
+        demand royalties.</strong>" </p>
+    <p> Galek pinched the bridge of his nose. "<strong>Grint, please.</strong> You can't just-" </p>
+    <p> "<strong>Zim.</strong>" Grint clapped a hand on his shoulder. "<strong>Let's be real. You're three weeks late on
+        rent.</strong>" </p>
+    <p> Galek <strong>tensed.</strong> "I told you, <strong>I'll have the credits soon!</strong>" </p>
+    <p> Grint <strong>grinned wider.</strong> "Well, <em>here's</em> an easy solution. Sell the smoaklin, and
+      <strong>I'll forget about the rent for a whole month.</strong>" </p>
+    <p> Galek <strong>blinked.</strong> "...A month?" </p>
+    <p> Grint nodded. "Yup. <strong>One whole month.</strong> Debt erased." </p>
+    <p> Galek stared at him. "<strong>One month? That's IT?!</strong>" </p>
+    <p> Grint shrugged. "Hey, it's <strong>a really good month.</strong>" </p>
+    <p> The smoaklin <strong>snorted.</strong> "Wow. <strong>That's a scam, buddy.</strong>" </p>
+    <p class="message"> "For the second time today, the smoaklin-an actual living pest-pities Galek." </p>
+    <p> Galek <strong>pinched the bridge of his nose.</strong> "Okay. <strong>New plan.</strong>" </p>
+  </main> <!-- Footer -->
+  <footer>
+    <p> &copy; 2025 Enrico Fraccaroli. All rights reserved. </p>
+    <p> This story is the intellectual property of the author. Unauthorized reproduction, distribution, or adaptation is
+      strictly prohibited and may be subject to legal action. </p>
+  </footer>
 </body>
 
 </html>

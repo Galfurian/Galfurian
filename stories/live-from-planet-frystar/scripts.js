@@ -1,6 +1,6 @@
 
 /// Load the saved theme from localStorage on page load.
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", () => {
     // Find the main.
     const main = document.querySelector('main');
     // Get the saved theme.
@@ -19,7 +19,29 @@ window.onload = function () {
     } else {
         main.style.fontSize = "18px";
     }
-};
+
+    // ====== Chapter Navigation ======
+    if (typeof CHAPTER_TOTAL === "undefined") return;
+    const nav = document.getElementById("chapter-nav");
+    const match = window.location.pathname.match(/chapter(\d+)\.html/);
+    if (!match) return;
+    const current = parseInt(match[1], 10);
+    let html = "[";
+    if (current > 1) {
+        html += `<a href="chapter${current - 1}.html">&larr; Previous</a>`;
+    } else{
+        html += `<a href="#" class="disabled-link">&larr; Previous</a>`;
+    }
+    html += ` | `;
+    if (current < CHAPTER_TOTAL) {
+        html += `<a href="chapter${current + 1}.html">Next &rarr;</a>`;
+    } else {
+        html += `<a href="#" class="disabled-link">Next &rarr;</a>`;
+    }
+    html += `] `;
+    html += `<a href="../index.html"><b>Index</b></a>`;
+    nav.innerHTML = html;
+});
 
 /// Change the font size of the main content.
 function ChangeFontSize(change) {

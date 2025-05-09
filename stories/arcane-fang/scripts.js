@@ -1,6 +1,6 @@
 
 /// Load the saved theme from localStorage on page load.
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", () => {
     // Find the main.
     const main = document.querySelector('main');
     // Find the story.
@@ -31,7 +31,45 @@ window.onload = function () {
     if (story && word_count) {
         word_count.innerText = 'Words: ' + CountWords(story.textContent);
     }
-};
+
+    // ====== Chapter Navigation ======
+    if (typeof CHAPTER_TOTAL === "undefined") return;
+    const nav = document.getElementById("chapter-nav");
+    const match = window.location.pathname.match(/chapter(\d+)\.html/);
+    if (!match) return;
+    const current = parseInt(match[1], 10);
+    let html = "[";
+    if (current > 1) {
+        html += `<a href="chapter${current - 1}.html">&larr; Previous</a>`;
+    } else{
+        html += `<a href="#" class="disabled-link">&larr; Previous</a>`;
+    }
+    html += ` | `;
+    if (current < CHAPTER_TOTAL) {
+        html += `<a href="chapter${current + 1}.html">Next &rarr;</a>`;
+    } else {
+        html += `<a href="#" class="disabled-link">Next &rarr;</a>`;
+    }
+    html += `] `;
+    html += `<a href="../index.html"><b>Index</b></a>`;
+    nav.innerHTML = html;
+});
+
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('show');
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.querySelectorAll("button, a").forEach(el => {
+        el.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                mobileMenu.classList.remove("show");
+            }
+        });
+    });
+});
 
 /// Change the font size of the main content.
 function ChangeFontSize(change) {

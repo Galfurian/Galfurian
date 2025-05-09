@@ -5,7 +5,6 @@
     --card-border: #dddddd;
     --main-background: #ffffff;
     --main-box-shadow: rgba(0, 0, 0, 0.2);
-    /* Link Colors */
     --link-color: #007bff;
     --link-visited-color: #5a5a5a;
 }
@@ -17,12 +16,17 @@
     --card-border: #333333;
     --main-background: #333333;
     --main-box-shadow: rgba(0, 0, 0, 0.6);
-
-    /* Link Colors for Dark Theme */
     --link-color: #80b3ff;
     --link-visited-color: #cccccc;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ===== Layout ===== */
 body {
     font-family: 'Fira Code', monospace;
     font-size: 1.25rem;
@@ -32,67 +36,6 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 80px;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 120px;
-    background-color: #333333;
-    color: white;
-    z-index: 1000;
-    padding: 0 1rem;
-    /* display: flex; */
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.header-title {
-    margin: 0;
-}
-
-.header-chapter {
-    margin: 0;
-}
-
-#header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-#header-controls {
-    display: flex;
-    gap: 1rem;
-}
-
-#font-size-buttons {
-    display: flex;
-    gap: 1rem;
-}
-
-nav {
-    display: flex;
-    gap: 1rem;
-}
-
-nav a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.disabled-link {
-    color: #AAAAAA;
-    text-decoration: none;
-    pointer-events: none;
-    cursor: default;
 }
 
 main {
@@ -107,26 +50,17 @@ main {
     text-align: justify;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    /* Center the image if needed */
-}
-
-button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background-color: #AAAAAA;
-    color: 333333;
-}
-
-button:hover {
-    background-color: #555;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #444444;
+    color: white;
+    z-index: 1000;
+    padding: 0 1rem;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -136,6 +70,168 @@ footer {
     padding: 1rem;
     background-color: #333333;
     color: white;
+}
+
+/* ===== Typography ===== */
+.header-title,
+.header-chapter {
+    margin: 0;
+}
+
+/* ===== Links ===== */
+nav a,
+main a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+main a:visited {
+    color: var(--link-visited-color);
+}
+
+nav a:hover,
+main a:hover {
+    text-decoration: underline;
+}
+
+.disabled-link {
+    color: #AAAAAA;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}
+
+/* ===== Navigation ===== */
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* ===== Buttons ===== */
+button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+    color: #333333;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.chapter-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.chapter-nav p,
+.chapter-nav nav {
+    margin: 0;
+    padding: 0;
+}
+
+#font-size-buttons button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background-color: #eee;
+    color: #333;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    font-family: 'Fira Code', monospace;
+}
+
+#font-size-buttons button:hover {
+    background-color: #ddd;
+    border-color: #666;
+    transform: scale(1.05);
+}
+
+#font-size-buttons button:active {
+    transform: scale(0.98);
+    background-color: #ccc;
+}
+
+/* ===== Components ===== */
+
+.chapter-number {
+    font-size: 1.25em;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+}
+
+.section-header {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    color: var(--text-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.equipment-card h3 {
+    margin-top: 0;
+    border-bottom: 2px solid gray;
+    padding-bottom: 0.5rem;
+}
+
+.equipment-card h4 {
+    margin: 0;
+}
+
+.equipment-card ul {
+    margin: 0.1rem;
+}
+
+.equipment-card li {
+    margin: 0.1rem;
+}
+
+/* ===== Images ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+strong {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ===== Utility ===== */
+.header-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 0;
 }
 
 hr {
@@ -150,25 +246,41 @@ hr {
     margin: 20px auto;
 }
 
-.word-counter {
-    text-align: center;
-    border-radius: 1px;
-    margin: 0px;
+/* ===== Responsive ===== */
+@media (max-width: 1000px) {
+    header {
+        height: auto;
+        padding: 0.5rem;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin: 0.25rem 0;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .header-chapter {
+        font-size: 1rem;
+    }
+
+    #font-size-buttons,
+    #font-size-buttons button,
+    .chapter-nav {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+        justify-content: flex-start;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
 }
 
-/* Apply link colors */
-main a {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-main a:visited {
-    color: var(--link-visited-color);
-}
-
-main a:hover {
-    text-decoration: underline;
-}
+/* ====== Book Specific Styles ====== */
 
 .book-title {
     color: #fff;
@@ -192,27 +304,4 @@ main a:hover {
     padding-left: 15px;
     font-weight: bold;
     color: #88aaff;
-}
-
-section {
-    text-align: justify;
-
-    width: 80ch;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section strong {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
 }

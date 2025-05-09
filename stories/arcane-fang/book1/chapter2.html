@@ -2,42 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 2</title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
-    <script src="assets/scripts/book1.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 2</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../scripts.js"></script>
+  <script src="assets/scripts/book1.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="header-top">
-            <h1 class="header-title">Arcane Fang</h1>
-            <div id="header-controls">
-                <div id="font-size-buttons">
-                    <button onclick="ToggleTheme()">Toggle Mode</button>
-                    <button onclick="ChangeFontSize(-1)">Smaller Font</button>
-                    <button onclick="ChangeFontSize(0)">Default Font</button>
-                    <button onclick="ChangeFontSize(+1)">Larger Font</button>
-                </div>
-            </div>
-        </div>
-        <div id="header-top">
-            <h2 class="header-chapter">Chapter 2: The incident and the
-                infection</h2>
-            <div id="header-controls">
-                (<p id="word-count" class="word-counter"></p>)
-                <nav>
-                    <a href="chapter1.html">&larr; Previous</a> |
-                    <a href="chapter3.html">Next &rarr;</a>
-                    (<a href="../index.html"><b>Index</b></a>)
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- 
+  <header id="story-header">
+    <div class="header-row">
+      <h1 class="header-title">Arcane Fang</h1>
+      <div id="font-size-buttons">
+        <button onclick="ToggleTheme()">Toggle Mode</button>
+        <button onclick="ChangeFontSize(-1)" title="Smaller font">A-</button>
+        <button onclick="ChangeFontSize(0)" title="Default font">A</button>
+        <button onclick="ChangeFontSize(+1)" title="Larger font">A+</button>
+      </div>
+    </div>
+    <div class="header-row">
+      <h2 class="header-chapter">Chapter 2: The incident and the infection</h2>
+      <div class="chapter-nav">
+        <p id="word-count" class="word-counter"></p>
+        <nav id="chapter-nav"></nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- 
         ### 2.2
         - Consider expanding slightly on the aftermath of Calwyn's outburst to
           provide more clarity on his emotional state as he flees, giving a
@@ -90,638 +83,638 @@
           inside Calwyn may react to his emotions or intentions, setting the
           stage for future exploration of his powers.
         -->
-        <div id="story">
-            ## 2. The incident and the infection
+    <div id="story">
+      ## 2. The incident and the infection
 
-            ### 2.1. A Fragile Peace
+      ### 2.1. A Fragile Peace
 
-            The air in Mirewood was heavy with the damp scent of the swamp, the
-            kind that clung to clothes and lingered long after the sun had set.
-            Calwyn crouched near the edge of a small garden, carefully plucking
-            weeds as his mother, Lenya, worked beside him, humming a soft tune.
+      The air in Mirewood was heavy with the damp scent of the swamp, the
+      kind that clung to clothes and lingered long after the sun had set.
+      Calwyn crouched near the edge of a small garden, carefully plucking
+      weeds as his mother, Lenya, worked beside him, humming a soft tune.
 
-            "Easy now," Lenya said with a soft smile, brushing soil from her
-            fingers. "Pull too hard, and you'll take the roots of the good ones
-            with the weeds."
+      "Easy now," Lenya said with a soft smile, brushing soil from her
+      fingers. "Pull too hard, and you'll take the roots of the good ones
+      with the weeds."
 
-            Calwyn sighed, holding up the clump of weeds he'd just uprooted. A
-            faint warmth tingled in his palm-something that always happened when
-            he worked in the garden-but he shook it off. "How can you tell
-            what's good and what's not? It all looks the same."
+      Calwyn sighed, holding up the clump of weeds he'd just uprooted. A
+      faint warmth tingled in his palm-something that always happened when
+      he worked in the garden-but he shook it off. "How can you tell
+      what's good and what's not? It all looks the same."
 
-            "You'll learn." Lenya chuckled, brushing a strand of hair from her
-            face. "And until then, you'll keep pulling weeds while I supervise."
+      "You'll learn." Lenya chuckled, brushing a strand of hair from her
+      face. "And until then, you'll keep pulling weeds while I supervise."
 
-            Calwyn rolled his eyes but couldn't help smiling. His mother had
-            always been patient with him, even when his curiosity led to broken
-            jars or spilled herbs. She had a way of making every chore feel less
-            like work and more like a lesson.
+      Calwyn rolled his eyes but couldn't help smiling. His mother had
+      always been patient with him, even when his curiosity led to broken
+      jars or spilled herbs. She had a way of making every chore feel less
+      like work and more like a lesson.
 
-            A sharp whistle cut through the air, and Calwyn turned to see his
-            father, Bran, standing by the fence at the edge of their yard. He
-            was broad-shouldered and weathered from years of labor, but his
-            expression softened as he waved them over.
+      A sharp whistle cut through the air, and Calwyn turned to see his
+      father, Bran, standing by the fence at the edge of their yard. He
+      was broad-shouldered and weathered from years of labor, but his
+      expression softened as he waved them over.
 
-            "Calwyn, give me a hand with this post!" Bran called. "It's leaning
-            worse than the old mill."
+      "Calwyn, give me a hand with this post!" Bran called. "It's leaning
+      worse than the old mill."
 
-            Lenya patted Calwyn's shoulder. "Go on. He's been complaining about
-            that fence all week."
+      Lenya patted Calwyn's shoulder. "Go on. He's been complaining about
+      that fence all week."
 
-            Calwyn jogged over, grabbing the hammer and nails his father handed
-            him. Together, they worked to steady the fence, Bran pointing out
-            how to drive the nails at an angle to keep the wood secure.
+      Calwyn jogged over, grabbing the hammer and nails his father handed
+      him. Together, they worked to steady the fence, Bran pointing out
+      how to drive the nails at an angle to keep the wood secure.
 
-            "Use your head, boy," Bran said, his tone gruff but warm.
-            "Strength'll only take you so far. Think ahead, or this fence'll be
-            down again by the next storm."
+      "Use your head, boy," Bran said, his tone gruff but warm.
+      "Strength'll only take you so far. Think ahead, or this fence'll be
+      down again by the next storm."
 
-            "I get it," Calwyn muttered, hammering a nail a little harder than
-            necessary. "You've only told me that a hundred times."
+      "I get it," Calwyn muttered, hammering a nail a little harder than
+      necessary. "You've only told me that a hundred times."
 
-            "And I'll tell you a hundred more," Bran replied. He ruffled
-            Calwyn's hair, earning a groan of protest. "One day, you'll thank me
-            for it."
+      "And I'll tell you a hundred more," Bran replied. He ruffled
+      Calwyn's hair, earning a groan of protest. "One day, you'll thank me
+      for it."
 
-            ### 2.2. The Breaking Point
+      ### 2.2. The Breaking Point
 
-            The peaceful rhythm of the day shattered when the soldiers arrived.
+      The peaceful rhythm of the day shattered when the soldiers arrived.
 
-            It started with the sound of hoofbeats, distant at first but growing
-            louder. Villagers peeked out from their homes, faces tense as a
-            group of armored men rode into the square. The banner of Lord Calden
-            fluttered above them, its stark black and red colors a grim reminder
-            of the fief's master.
+      It started with the sound of hoofbeats, distant at first but growing
+      louder. Villagers peeked out from their homes, faces tense as a
+      group of armored men rode into the square. The banner of Lord Calden
+      fluttered above them, its stark black and red colors a grim reminder
+      of the fief's master.
 
-            Calwyn stood frozen by the fence as the soldiers dismounted. His
-            father stepped forward. "Stay close," Bran murmured, his hand
-            gripping the fence. His voice was steady, but his knuckles whitened
-            against the wood. "Don't draw attention. Let me handle this."
+      Calwyn stood frozen by the fence as the soldiers dismounted. His
+      father stepped forward. "Stay close," Bran murmured, his hand
+      gripping the fence. His voice was steady, but his knuckles whitened
+      against the wood. "Don't draw attention. Let me handle this."
 
-            In the square, the leader of the soldiers, a man with a cruel face
-            and a scar running down his cheek, raised his voice. "Taxes are
-            overdue. Lord Calden does not tolerate delays."
+      In the square, the leader of the soldiers, a man with a cruel face
+      and a scar running down his cheek, raised his voice. "Taxes are
+      overdue. Lord Calden does not tolerate delays."
 
-            The villagers gathered hesitantly, clutching small pouches of coins
-            or sacks of grain. Calwyn's parents joined them, Bran carrying a
-            weathered pouch in his calloused hands. When their turn came, Bran
-            stepped forward.
+      The villagers gathered hesitantly, clutching small pouches of coins
+      or sacks of grain. Calwyn's parents joined them, Bran carrying a
+      weathered pouch in his calloused hands. When their turn came, Bran
+      stepped forward.
 
-            "This is all we have," Bran said, holding out the pouch. "The crops
-            failed, and-"
+      "This is all we have," Bran said, holding out the pouch. "The crops
+      failed, and-"
 
-            The soldier snatched the pouch, weighed it in his hand, and sneered.
-            "It's not enough. You think this pitiful offering will satisfy Lord
-            Calden?"
+      The soldier snatched the pouch, weighed it in his hand, and sneered.
+      "It's not enough. You think this pitiful offering will satisfy Lord
+      Calden?"
 
-            Bran stiffened. "Please, give us more time. We'll-"
+      Bran stiffened. "Please, give us more time. We'll-"
 
-            "You've had plenty of time," the soldier interrupted, his voice
-            cold. He motioned to the others. "Teach them what happens to liars
-            and beggars."
+      "You've had plenty of time," the soldier interrupted, his voice
+      cold. He motioned to the others. "Teach them what happens to liars
+      and beggars."
 
-            Two soldiers stepped forward, grabbing Bran by the arms and dragging
-            him toward the horses. Lenya screamed, rushing to his side. "No!
-            Please, we'll find more!" she begged, clawing at the soldier
-            restraining her.
+      Two soldiers stepped forward, grabbing Bran by the arms and dragging
+      him toward the horses. Lenya screamed, rushing to his side. "No!
+      Please, we'll find more!" she begged, clawing at the soldier
+      restraining her.
 
-            Her pleas were ignored as the lead soldier smirked. "Maybe we take
-            the wife instead," he said, leering at Lenya. "She looks like she
-            could fetch a good price at the next market."
+      Her pleas were ignored as the lead soldier smirked. "Maybe we take
+      the wife instead," he said, leering at Lenya. "She looks like she
+      could fetch a good price at the next market."
 
-            Calwyn's chest tightened as his mother's screams tore through the
-            air. She twisted in the soldier's grip, her wide eyes meeting his,
-            pleading silently. "No! Leave her alone!" Bran roared, his voice raw
-            with fury. The soldiers only laughed, shoving him to the dirt like a
-            discarded tool.
+      Calwyn's chest tightened as his mother's screams tore through the
+      air. She twisted in the soldier's grip, her wide eyes meeting his,
+      pleading silently. "No! Leave her alone!" Bran roared, his voice raw
+      with fury. The soldiers only laughed, shoving him to the dirt like a
+      discarded tool.
 
-            The soldier restraining Lenya tightened his grip, dragging her
-            closer. "We're just collecting what's owed. If it's not coin, it'll
-            be something else."
+      The soldier restraining Lenya tightened his grip, dragging her
+      closer. "We're just collecting what's owed. If it's not coin, it'll
+      be something else."
 
-            "Stop it!" Calwyn shouted, running forward. He grabbed a rock from
-            the ground and hurled it at the soldier, striking him in the
-            shoulder. The man stumbled back, his grip on Lenya loosening.
+      "Stop it!" Calwyn shouted, running forward. He grabbed a rock from
+      the ground and hurled it at the soldier, striking him in the
+      shoulder. The man stumbled back, his grip on Lenya loosening.
 
-            Bran turned his head sharply. "Stay back, Calwyn!" he barked.
-            "You'll make it worse!"
+      Bran turned his head sharply. "Stay back, Calwyn!" he barked.
+      "You'll make it worse!"
 
-            But Calwyn's blood was already boiling. He couldn't watch them hurt
-            his parents any longer. He couldn't stand being powerless.
-
-            "Stupid boy," the lead soldier spat, motioning to another. "Teach
-            him a lesson."
+      But Calwyn's blood was already boiling. He couldn't watch them hurt
+      his parents any longer. He couldn't stand being powerless.
+
+      "Stupid boy," the lead soldier spat, motioning to another. "Teach
+      him a lesson."
 
-            A soldier advanced toward Calwyn, drawing a whip from his belt. "You
-            think you're brave?" he snarled, cracking the whip in the air.
-            "We'll see how tough you are after this."
+      A soldier advanced toward Calwyn, drawing a whip from his belt. "You
+      think you're brave?" he snarled, cracking the whip in the air.
+      "We'll see how tough you are after this."
 
-            The first lash barely missed Calwyn's face, and he stumbled
-            backward, his heart pounding. The second strike grazed his arm,
-            sending a sharp sting up to his shoulder. He bit back a cry,
-            clenching his fists as hot tears filled his eyes.
-
-            "Calwyn, no!" Lenya screamed, struggling harder. Bran roared,
-            thrashing against the soldiers holding him.
-
-            Calwyn's vision blurred, the world narrowing to the sounds of his
-            parents' voices and the crack of the whip. A searing heat built in
-            his chest, rising with each heartbeat, each cry for help. His body
-            trembled as the pressure inside him begged for release.
-
-            "Let them go!" he screamed, his voice raw.
-
-            The air crackled, alive with an unnatural charge that prickled
-            against Calwyn's skin. Heat built in his chest, too much to contain,
-            until a deafening pulse of energy tore free, rippling outward in a
-            blinding surge. The soldiers were hurled back, their screams drowned
-            by the thunderous roar. The whip flew from the soldiers's hand as he
-            was thrown backward into a cart. The others were knocked to the
-            ground, groaning in pain.
-
-            ![Calwyn's power](assets/images/calwyn_power.jpeg)
-
-            But the energy didn't stop there.
-
-            Calwyn's knees buckled as the force lashed out in all directions.
-            His parents, too close to the blast, were thrown to the ground.
-            Lenya's scream cut off abruptly, and Bran's body hit the dirt with a
-            sickening thud.
-
-            "No," Calwyn whispered, his ears ringing. He stumbled toward them,
-            his legs shaking. "No, no, no!"
-
-            Calwyn fell to his knees, his trembling hands hovering over their
-            still forms. He didn't dare touch them, as though his hands might
-            still carry the curse that had struck them down. "I didn't mean to-"
-            His voice broke, the words tangling in his throat. Tears blurred his
-            vision, but they couldn't wash away the horror of what he'd done.
-
-            Around him, the villagers stood paralyzed, their faces a patchwork
-            of pale dread and dawning horror. Murmurs rippled through the crowd
-            like a rising tide, sharp-edged and accusatory.
-
-            "It's magic," an older woman gasped, clutching her child close as
-            though to shield them from an unseen threat.
-
-            "Demon's work," another hissed, his voice trembling. "He'll bring
-            ruin to us all!"
-
-            Eyes filled with suspicion and fear turned to Calwyn, their weight
-            crushing him far more than any whip ever could. Even faces he
-            recognized-neighbors who had shared kind words or bread in
-            passing-looked at him now as though he'd become something monstrous.
-
-            "He killed them," someone whispered, the words cutting through the
-            air like a blade.
-
-            "No!" Calwyn's voice cracked, but the denial felt hollow in his
-            throat. He stumbled backward, his gaze darting between the villagers
-            and his trembling hands. The faint glow of magic still clung to his
-            fingers, flickering like dying embers-a mark he couldn't erase.
-
-            "Stay back!" A man lunged forward, brandishing a rusted pitchfork.
-            "Don't come near us, boy!"
-
-            Calwyn's chest tightened, his breath coming in shallow gasps. He
-            wanted to explain, to make them understand he hadn't meant to hurt
-            anyone. But the widening circle of fear around him told him there
-            was nothing he could say that would erase what they had seen.
-
-            "Demon spawn," the soldier rasped from where he lay crumpled against
-            the cart. His voice was weak but venomous, each word dripping with
-            loathing. "You'll bring the curse down on all of us."
-
-            The villagers' murmurs grew louder, their fear feeding on the
-            soldier's words until it swelled into a chorus of condemnation.
-            Someone threw a stone, and though it missed, the message was clear.
-
-            Calwyn's body moved before his mind caught up. He ran, his boots
-            pounding against the dirt as the villagers' shouts followed him like
-            a shadow. Each step felt heavier than the last, weighted with the
-            understanding that he couldn't go back.
-
-            ### 2.3. Fleeing Into the Mire
-
-            The swamp swallowed young Calwyn whole, its thick mist wrapping
-            around him like a suffocating shroud. His feet stumbled over tangled
-            roots and sinking mud, his breaths coming in ragged gasps. The
-            shouts of the soldiers faded behind him, but their words lingered,
-            sharp and cutting.
-
-            "Demon spawn."
-
-            "You'll kill us all."
-
-            A sharp pain flared in his side where a soldier's boot had struck
-            him during his frantic escape. His arm throbbed from where the whip
-            had grazed him, the welt stinging with each movement. Blood trickled
-            from a shallow cut on his cheek, a reminder of the chaos he had just
-            fled. The soldier's blade had nicked him as he darted into the
-            swamp, its sharp sting mingling with the throb of his other wounds.
-            Every movement sent waves of pain through his battered body, but
-            Calwyn couldn't stop. Not now.
-
-            A sharp branch tore at his sleeve, scraping against his already
-            bruised arm. He stumbled forward, gasping for breath, his vision
-            blurring as exhaustion crept in. His legs burned, muscles protesting
-            every step as he slogged through the thick mud, the swamp pulling at
-            his boots as if trying to swallow him whole.
-
-            Calwyn tripped on a twisted root, collapsing face-first into the
-            muck. The impact sent a jolt of pain through his ribs, and he cried
-            out, his voice muffled by the damp earth. For a moment, he lay
-            there, his chest heaving, his body trembling from a combination of
-            exhaustion, fear, and grief.
-
-            "I didn't mean to..." he whispered, barely audible over the faint
-            rustle of leaves. The faces of his parents flashed in his mind
-            again, lifeless and still. Tears mixed with the dirt on his cheeks,
-            and he clenched his fists against the overwhelming guilt clawing at
-            his chest.
-
-            The sound of distant voices snapped him back to reality. The
-            soldiers were still out there, searching. Their words were faint,
-            their shouts distorted by the mist, but the danger was real. Calwyn
-            forced himself to his feet, wincing as his bruised ribs protested.
-            He pressed a hand to his side and pushed forward, each step a
-            struggle.
-
-            The swamp grew darker, the thick canopy above swallowing what little
-            light remained. The air was damp and heavy, clinging to him like a
-            weight. His cuts stung as the swamp water seeped into them, and
-            every breath felt like an effort. But still, he moved.
-
-            A branch snapped nearby, and Calwyn froze. His ears strained, but
-            all he could hear was the distant croak of frogs and the faint
-            rustle of leaves. He couldn't tell if the soldiers were still
-            chasing him or if the swamp itself was closing in, its endless
-            expanse offering no path forward and no way back.
-
-            Then, through the haze of his pain and the oppressive fog, Calwyn
-            saw it-a faint, pulsing light. It glowed a soft blue, unlike
-            anything he'd ever seen, standing out against the murky tones of the
-            swamp.
-
-            He blinked, unsure if his exhausted mind was playing tricks on him,
-            but the light remained steady, drawing him in. He stumbled toward
-            it, the pain in his body momentarily dulled by curiosity and
-            desperation. As he neared, the outline of a structure emerged from
-            the shadows-a towering ruin, partially buried and covered in vines,
-            its jagged edges cutting into the mist.
-
-            ### 2.4. The Primekin ruins
-
-            ![Primekin ruins](assets/images/primekin_ruins.jpeg)
-
-            The light seemed to emanate from within, flickering faintly through
-            cracks in the stone. Calwyn hesitated at the entrance, a gaping
-            archway etched with symbols he didn't recognize. The blue glow
-            illuminated strange carvings on the walls-figures that looked almost
-            human but merged with animals, their forms twisted yet graceful.
-
-            His heart pounded as he stepped inside. The air was heavy, clinging
-            to him like the weight of his own thoughts. The swamp behind him was
-            merciless, but this place... this place was different. The eerie
-            blue glow reminded him of something alive, something waiting.
-
-            He hesitated, his hands trembling as he glanced back toward the
-            misty expanse of the swamp. His chest tightened, the memory of his
-            parents' lifeless faces flashing in his mind. He wanted to turn
-            around, to run until the pain stopped, but where would he go? What
-            was left for him now?
-
-            A part of him didn't care what was inside-if it was safe, dangerous,
-            or worse. The swamp behind him was unforgiving, its dangers mirrored
-            by the distant echoes of the soldiers' voices. His body ached,
-            bruised and bloodied, every step a painful reminder of what he had
-            lost.
-
-            If the ruin could offer shelter, even for a moment, it would be
-            enough. Whether he found a place to rest, a chance to hide, or
-            simply a place to die, it didn't matter. He had nowhere else to go.
-
-            Whatever lay within might be worse than the swamp behind him-but it
-            might also offer an end to the pain, one way or another.
-
-            The jagged archway loomed before Calwyn, carved with symbols that
-            shimmered faintly in the eerie blue light. The glow seemed to seep
-            through the cracks in the ancient stone, casting long shadows across
-            the walls. He hesitated, peering into the darkness beyond, before
-            stepping inside. His footsteps echoed softly in the stillness,
-            swallowed quickly by the oppressive silence.
-
-            The air grew colder as he moved deeper, his breath visible in faint
-            puffs. The entry hall was narrow, its walls covered in moss and
-            grime, with roots snaking through cracks in the stone. Strange
-            symbols were etched along the surfaces, faintly glowing as though
-            the ruin itself still clung to life. Calwyn reached out to touch
-            one, but a sharp jolt made him pull his hand back.
-
-            "What is this place?" he muttered under his breath, shaking his
-            fingers.
-
-            As he continued, the narrow corridor opened into a larger chamber.
-            He stopped short as his eyes adjusted to the faint blue light that
-            illuminated the room. The floor was uneven, partially collapsed in
-            places, revealing gaping holes that plunged into darkness. Jagged
-            stones jutted up like broken teeth, forcing him to navigate
-            carefully.
-
-            One step sent loose pebbles tumbling into the void, the sound
-            echoing ominously. He swallowed hard and hugged the wall, feeling
-            his way forward. A faint trickle of water dripped from somewhere
-            above, the droplets catching the light and gleaming like stars in
-            the gloom.
-
-            Ahead, the remnants of what might have been a doorway blocked his
-            path. The wooden frame had long since rotted away, leaving only a
-            heavy slab of stone tilted against the wall. Calwyn pressed his
-            shoulder against it, gritting his teeth as he pushed. The stone
-            shifted slightly, scraping against the floor with a grating sound,
-            before toppling over with a loud crash that made him wince.
-
-            He froze, heart pounding, and listened. The ruin remained silent,
-            but the sound of the crash seemed to hang in the air, amplifying the
-            sense that he was intruding somewhere he didn't belong.
-
-            ### 2.5. An unsettling histrory
-
-            Beyond the doorway, the chamber widened into what could only be
-            described as a laboratory. The stale air was heavy with the scent of
-            damp stone and decay. The walls were lined with faded carvings,
-            depictions of humanoid figures merging with animals: a wolf howling,
-            an eagle in flight, a serpent coiled around a staff. Beneath each
-            figure were symbols-*Lupus*, *Aquila*, *Serpens*, and others he
-            couldn't decipher.
-
-            Calwyn's fingers hovered just above the intricate carvings etched
-            into the stone, their lines pulsing faintly with a glow that seemed
-            alive. The Aetheric patterns spiraled and twisted in ways that
-            defied logic, as if the very act of observing them pulled at the
-            edges of his mind. A low hum, almost imperceptible, resonated
-            through the air, vibrating in his chest like an echo from another
-            world.
-
-            The glow grew brighter as his gaze lingered, casting shadows that
-            danced unnaturally across the damp stone walls. Each shift in the
-            light seemed deliberate, as though the carvings were shifting their
-            focus to him. His breath hitched, and a cold prickle ran down his
-            spine. These weren't just symbols-they felt like whispers frozen in
-            time, fragments of something ancient and unknowable.
-
-            An unease settled deep in his gut, but he couldn;t pull away. It was
-            as if the patterns themselves were probing his thoughts, sifting
-            through his memories with a silent, otherworldly curiosity. He
-            clenched his fists, forcing himself to step back. The air around him
-            seemed heavier, pressing against his skin as if the ruins themselves
-            were alive, watching, waiting.
-
-            At the center of the room stood a broken table, its surface covered
-            in shattered glass and rusted tools. Something about the place felt
-            wrong, as though it had been abandoned in a hurry, its purpose left
-            unfinished.
-
-            Calwyn's eyes fell on a large, faded map pinned to the far wall. The
-            parchment was brittle, its edges curled and torn, but the details
-            were clear: a network of locations, each labeled with strange,
-            almost clinical names-*Lupinexus*, *Pantheracrypt*, *Aquilabase*.
-            The terms were unfamiliar, yet something about them stirred unease,
-            as though they were echoes of the carvings he had seen earlier.
-
-            His gaze drifted back to the walls, where the faded figures of
-            animals merged with humanoid forms: the wolf's sharp howl, the
-            eagle's wings spread wide, the serpent's sinuous coils. He realized
-            now that the carvings weren't just decorative-they were tied to the
-            map, a record of something methodical, deliberate. The names weren't
-            just labels; they were remnants of experiments, places tied to what
-            the Primekin had done here.
-
-            The thought sent a chill through him. Whatever had been studied or
-            created in this place hadn't been forgotten-it was etched into both
-            the map and the walls, an unspoken link between the cold
-            calculations of the Primekin and the forms they sought to shape.
-
-            "Is this what they were doing here?" he murmured, his fingers
-            brushing over the brittle parchment. His voice sounded hollow,
-            swallowed by the silence of the room. "Experimenting on animals...
-            or people?"
-
-            The words lingered in the stale air, unanswered and heavy. The
-            carvings on the walls seemed to watch him, their twisted forms
-            catching the faint blue glow like shadows stretching toward him. The
-            map offered no clarity, only more questions-a glimpse into something
-            ancient and unnatural, its purpose long buried but still alive in
-            the ruin's oppressive weight.
-
-            A faint hum broke the stillness, low and rhythmic, like a heartbeat
-            echoing through the chamber. Calwyn froze, the sound sending a chill
-            down his spine. Slowly, he turned toward the source. The sound
-            wasn't coming from within the room-it was emanating from behind a
-            large stone door at the far end of the chamber.
-
-            The door stood tall and unyielding, its surface carved with
-            intricate patterns that glowed faintly with the same eerie blue
-            light. Deep grooves spiraled inward toward a single circular
-            indentation at its center. The hum grew louder as Calwyn approached,
-            vibrating through the air and into his chest.
-
-            He stopped a few steps away, staring at the door in confusion.
-            Something about the glowing patterns drew his gaze, the way they
-            seemed to pulse in rhythm with the hum. He reached out hesitantly,
-            his fingers brushing the cold stone. The glow flared briefly, and he
-            felt a sharp jolt run through his arm, making him stagger back.
-
-            "What is this?" he whispered, cradling his hand. The glow dimmed,
-            but the hum persisted, low and insistent.
-
-            He took a deep breath, staring at the circular indentation. It
-            almost seemed to call to him, the patterns shifting slightly, as
-            though urging him forward. Calwyn clenched his fists. Whatever power
-            had erupted from him earlier, whatever had taken his parents-it was
-            part of him now. He had to understand it.
-
-            He reached out again, this time pressing his palm firmly against the
-            center of the door. The glow flared brighter, spreading along the
-            grooves in a cascading wave of light. Heat surged through his hand,
-            not painful but intense, and the hum rose to a deafening pitch.
-
-            The door shuddered. With a grinding groan, it began to move, stone
-            scraping against stone as it slid open. Cold air rushed out from the
-            dark space beyond, carrying with it the faint metallic tang of
-            something ancient and unnatural.
-
-            Calwyn stepped back as the hum faded into silence. The newly
-            revealed chamber beyond was bathed in dim blue light. His eyes
-            adjusted slowly, settling on the source of the glow: a cylindrical
-            pod standing against the far wall. Its glass surface was cracked and
-            smeared with age, but the faint light emanating from within gave it
-            an otherworldly presence.
-
-            ![Cylindrical pod](assets/images/cylindrical_pod.jpeg)
-
-            He approached it cautiously, each step deliberate, his boots
-            scraping against the uneven stone. The hum that had been so loud
-            moments ago was gone, replaced by an eerie stillness. The glow
-            inside the pod pulsed faintly, as if the thing within was alive-or
-            waiting.
-
-            Calwyn reached out, his hand trembling. He hesitated, instinct
-            screaming at him to turn back, to leave this place behind. But
-            curiosity, or perhaps something deeper, pulled him forward. His
-            fingertips brushed the edge of the pod.
-
-            A sharp crack split the air, shattering the fragile silence. The
-            glass burst outward with an earsplitting noise, and Calwyn stumbled
-            back, shielding his face from the fragments.
-
-            ### 2.6. The Transformation
-
-            For a moment, nothing happened. The pod stood silent, its contents
-            hidden by swirling shadows. Then, from within, something shifted.
-
-            A faint glow illuminated the interior of the pod, and Calwyn's
-            breath caught. Slumped against the back of the glass was a skeletal
-            figure-humanoid... but wrong.
-
-            A long, sharp ribcage extended outward, its skeletal structure
-            warped and uneven, as though caught between forms. The arms, long
-            and sinewy, ended in claw-like appendages, their proportions
-            unsettlingly off-balance. The skull was an unnatural fusion of human
-            and wolf-a broad, elongated shape with angular cheekbones and a
-            protruding snout. Jagged teeth lined its partially formed jaw, a
-            grotesque hint at something designed for both speech and predation.
-
-            The overall frame was eerily elegant yet undeniably monstrous, as
-            though the being's very nature was caught between two worlds-human
-            and beast-locked in a struggle that neither side had won, leaving
-            behind a form that felt incomplete, fragmented, and tragic.
-
-            Calwyn stared, transfixed by the skeletal remains. Was this... a
-            Primekin? The legends spoke of their mastery of Aether and their
-            experiments, but no one had ever seen proof. Until now.
-
-            As if sensing his presence, the glow intensified, pulsing outward
-            from the skeleton. The bones trembled, their delicate structure
-            disintegrating into fine dust that swirled in the air like a storm
-            of glowing particles. Calwyn stumbled back, coughing as the
-            shimmering dust engulfed him, clinging to his skin like static.
-
-            And then the dust began to move.
-
-            It gathered in the center of the room, coalescing into a viscous
-            substance, both liquid and light. The ooze pulsed faintly with an
-            eerie blue-green glow, quivering as though alive. Calwyn barely had
-            time to react before it surged forward, rushing across the floor
-            with unnatural speed. He tried to step back, but the substance
-            lashed out, wrapping around his legs in tendrils of sticky, glowing
-            fluid.
-
-            "Get off me!" he shouted, clawing at the tendrils. But his hands
-            passed through them as though they were made of liquid energy. The
-            ooze ignored his struggles, climbing higher, cold and electric as it
-            seeped into his skin. Tendrils forced their way into his mouth,
-            nostrils, and ears, flooding his senses with a sharp, metallic tang.
-
-            Pain erupted within him, searing and all-consuming. The Aetheric
-            substance burrowed deeper, saturating his veins with fire. He
-            collapsed to his knees, clutching his chest as his muscles
-            convulsed. His vision fractured, flashes of light and shadow
-            distorting the room.
-
-            Images filled his mind-wolves racing beneath a blood-red moon, their
-            howls blending with crackling lightning. He felt their hunger, their
-            power, their unity, but also their rage. The visions weren't his,
-            yet they burned into his consciousness, as though the Aether itself
-            was rewriting him.
-
-            The ooze surged again, fusing with him, becoming part of him. His
-            nails grew into claws, his teeth sharpened, and a guttural growl
-            escaped his throat. He slammed his claws into the stone floor,
-            leaving deep gouges as the transformation coursed through him.
-
-            "No!" he gasped. "Stop!"
-
-            The substance responded, wrapping tighter around him, binding itself
-            to his blood, his bones, his very soul. The Aether bent him to its
-            will, twisting his body, his mind, and his spirit into something
-            both human and beast.
-
-            And then, it stopped.
-
-            Calwyn slumped forward, gasping for air. The glowing tendrils were
-            gone, absorbed into his skin, but their warmth remained, pulsing
-            faintly beneath the surface. He lifted his trembling hands, the
-            claws receding into human nails, but he could still feel it-the
-            energy coiled inside him, alive and watching.
-
-            The skeleton was gone, its remains scattered as dust. Whatever had
-            been in that pod, it had left its mark. It wasn't just a curse.
-
-            It was him now.
-
-            But as the silence settled around him, the warmth beneath his skin
-            began to stir. Faint at first, like the flicker of a dying ember, it
-            quickly grew into a raging heat, spreading through his veins with
-            wild abandon. Calwyn gasped, clutching his chest as the pressure
-            mounted, sharp and searing.
-
-            "No... no!" he rasped, his voice raw, his hands clawing at the stone
-            floor. The energy demanded release, surging through him like a storm
-            threatening to break.
-
-            With a guttural roar, the Aether erupted from him in a blinding
-            wave, crackling like lightning as it ripped through the air. The
-            force slammed into the walls, carving deep gouges into the stone and
-            sending shards flying. The hum that had filled the chamber turned
-            into a deafening crescendo as the ancient machinery, overwhelmed by
-            the surge, began to fail.
-
-            The floor cracked beneath him, glowing fissures spreading outward
-            like veins. Sparks danced along the walls as chunks of the ceiling
-            began to collapse, crashing into the chamber with thunderous force.
-            Calwyn staggered to his feet, his legs unsteady, and stumbled toward
-            the archway.
-
-            Behind him, the remnants of the pod and the Primekin skeleton
-            disintegrated, consumed by the chaos. The Aetheric charge tore
-            through the ruin, its raw energy feeding the destruction. The walls
-            buckled, and the ceiling above the chamber caved in, unleashing a
-            cascade of stone and dust.
-
-            Calwyn barely made it through the archway as the ground gave way. He
-            tripped and fell, tumbling into the swamp as the ruin collapsed
-            behind him, sending a plume of debris billowing outward. The blast
-            knocked him flat, the cool swamp air rushing over him like a
-            reprieve from the oppressive heat inside.
-
-            He lay there for a moment, gasping, his chest heaving as the charge
-            finally subsided. His veins still pulsed faintly with the lingering
-            energy, and his hands trembled as he pressed them into the dirt.
-            Whatever had happened in that chamber, whatever had merged with him,
-            was no longer just part of the ruins. It was part of him.
-
-            The mist around the ruin began to fade, the oppressive hum silenced
-            at last. But the memory of what he had seen-and what he had
-            done-remained. His thoughts raced: What had the Primekin been trying
-            to achieve? What had they left behind? And what had they turned him
-            into?
-
-            As the swamp settled into quiet and the faint light of dawn pierced
-            the gloom, Calwyn's eyes drifted to the horizon. The soldiers were
-            gone, and the ruin lay in rubble, but he knew this was only the
-            beginning.
-
-            Inside him, the energy stirred again, waiting.
-        </div>
-    </main>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Enrico Fraccaroli. All rights reserved.</p>
-        <p>This story is the intellectual property of the author. Unauthorized reproduction, distribution, or adaptation
-            is strictly prohibited and may be subject to legal action.</p>
-    </footer>
+      The first lash barely missed Calwyn's face, and he stumbled
+      backward, his heart pounding. The second strike grazed his arm,
+      sending a sharp sting up to his shoulder. He bit back a cry,
+      clenching his fists as hot tears filled his eyes.
+
+      "Calwyn, no!" Lenya screamed, struggling harder. Bran roared,
+      thrashing against the soldiers holding him.
+
+      Calwyn's vision blurred, the world narrowing to the sounds of his
+      parents' voices and the crack of the whip. A searing heat built in
+      his chest, rising with each heartbeat, each cry for help. His body
+      trembled as the pressure inside him begged for release.
+
+      "Let them go!" he screamed, his voice raw.
+
+      The air crackled, alive with an unnatural charge that prickled
+      against Calwyn's skin. Heat built in his chest, too much to contain,
+      until a deafening pulse of energy tore free, rippling outward in a
+      blinding surge. The soldiers were hurled back, their screams drowned
+      by the thunderous roar. The whip flew from the soldiers's hand as he
+      was thrown backward into a cart. The others were knocked to the
+      ground, groaning in pain.
+
+      ![Calwyn's power](assets/images/calwyn_power.jpeg)
+
+      But the energy didn't stop there.
+
+      Calwyn's knees buckled as the force lashed out in all directions.
+      His parents, too close to the blast, were thrown to the ground.
+      Lenya's scream cut off abruptly, and Bran's body hit the dirt with a
+      sickening thud.
+
+      "No," Calwyn whispered, his ears ringing. He stumbled toward them,
+      his legs shaking. "No, no, no!"
+
+      Calwyn fell to his knees, his trembling hands hovering over their
+      still forms. He didn't dare touch them, as though his hands might
+      still carry the curse that had struck them down. "I didn't mean to-"
+      His voice broke, the words tangling in his throat. Tears blurred his
+      vision, but they couldn't wash away the horror of what he'd done.
+
+      Around him, the villagers stood paralyzed, their faces a patchwork
+      of pale dread and dawning horror. Murmurs rippled through the crowd
+      like a rising tide, sharp-edged and accusatory.
+
+      "It's magic," an older woman gasped, clutching her child close as
+      though to shield them from an unseen threat.
+
+      "Demon's work," another hissed, his voice trembling. "He'll bring
+      ruin to us all!"
+
+      Eyes filled with suspicion and fear turned to Calwyn, their weight
+      crushing him far more than any whip ever could. Even faces he
+      recognized-neighbors who had shared kind words or bread in
+      passing-looked at him now as though he'd become something monstrous.
+
+      "He killed them," someone whispered, the words cutting through the
+      air like a blade.
+
+      "No!" Calwyn's voice cracked, but the denial felt hollow in his
+      throat. He stumbled backward, his gaze darting between the villagers
+      and his trembling hands. The faint glow of magic still clung to his
+      fingers, flickering like dying embers-a mark he couldn't erase.
+
+      "Stay back!" A man lunged forward, brandishing a rusted pitchfork.
+      "Don't come near us, boy!"
+
+      Calwyn's chest tightened, his breath coming in shallow gasps. He
+      wanted to explain, to make them understand he hadn't meant to hurt
+      anyone. But the widening circle of fear around him told him there
+      was nothing he could say that would erase what they had seen.
+
+      "Demon spawn," the soldier rasped from where he lay crumpled against
+      the cart. His voice was weak but venomous, each word dripping with
+      loathing. "You'll bring the curse down on all of us."
+
+      The villagers' murmurs grew louder, their fear feeding on the
+      soldier's words until it swelled into a chorus of condemnation.
+      Someone threw a stone, and though it missed, the message was clear.
+
+      Calwyn's body moved before his mind caught up. He ran, his boots
+      pounding against the dirt as the villagers' shouts followed him like
+      a shadow. Each step felt heavier than the last, weighted with the
+      understanding that he couldn't go back.
+
+      ### 2.3. Fleeing Into the Mire
+
+      The swamp swallowed young Calwyn whole, its thick mist wrapping
+      around him like a suffocating shroud. His feet stumbled over tangled
+      roots and sinking mud, his breaths coming in ragged gasps. The
+      shouts of the soldiers faded behind him, but their words lingered,
+      sharp and cutting.
+
+      "Demon spawn."
+
+      "You'll kill us all."
+
+      A sharp pain flared in his side where a soldier's boot had struck
+      him during his frantic escape. His arm throbbed from where the whip
+      had grazed him, the welt stinging with each movement. Blood trickled
+      from a shallow cut on his cheek, a reminder of the chaos he had just
+      fled. The soldier's blade had nicked him as he darted into the
+      swamp, its sharp sting mingling with the throb of his other wounds.
+      Every movement sent waves of pain through his battered body, but
+      Calwyn couldn't stop. Not now.
+
+      A sharp branch tore at his sleeve, scraping against his already
+      bruised arm. He stumbled forward, gasping for breath, his vision
+      blurring as exhaustion crept in. His legs burned, muscles protesting
+      every step as he slogged through the thick mud, the swamp pulling at
+      his boots as if trying to swallow him whole.
+
+      Calwyn tripped on a twisted root, collapsing face-first into the
+      muck. The impact sent a jolt of pain through his ribs, and he cried
+      out, his voice muffled by the damp earth. For a moment, he lay
+      there, his chest heaving, his body trembling from a combination of
+      exhaustion, fear, and grief.
+
+      "I didn't mean to..." he whispered, barely audible over the faint
+      rustle of leaves. The faces of his parents flashed in his mind
+      again, lifeless and still. Tears mixed with the dirt on his cheeks,
+      and he clenched his fists against the overwhelming guilt clawing at
+      his chest.
+
+      The sound of distant voices snapped him back to reality. The
+      soldiers were still out there, searching. Their words were faint,
+      their shouts distorted by the mist, but the danger was real. Calwyn
+      forced himself to his feet, wincing as his bruised ribs protested.
+      He pressed a hand to his side and pushed forward, each step a
+      struggle.
+
+      The swamp grew darker, the thick canopy above swallowing what little
+      light remained. The air was damp and heavy, clinging to him like a
+      weight. His cuts stung as the swamp water seeped into them, and
+      every breath felt like an effort. But still, he moved.
+
+      A branch snapped nearby, and Calwyn froze. His ears strained, but
+      all he could hear was the distant croak of frogs and the faint
+      rustle of leaves. He couldn't tell if the soldiers were still
+      chasing him or if the swamp itself was closing in, its endless
+      expanse offering no path forward and no way back.
+
+      Then, through the haze of his pain and the oppressive fog, Calwyn
+      saw it-a faint, pulsing light. It glowed a soft blue, unlike
+      anything he'd ever seen, standing out against the murky tones of the
+      swamp.
+
+      He blinked, unsure if his exhausted mind was playing tricks on him,
+      but the light remained steady, drawing him in. He stumbled toward
+      it, the pain in his body momentarily dulled by curiosity and
+      desperation. As he neared, the outline of a structure emerged from
+      the shadows-a towering ruin, partially buried and covered in vines,
+      its jagged edges cutting into the mist.
+
+      ### 2.4. The Primekin ruins
+
+      ![Primekin ruins](assets/images/primekin_ruins.jpeg)
+
+      The light seemed to emanate from within, flickering faintly through
+      cracks in the stone. Calwyn hesitated at the entrance, a gaping
+      archway etched with symbols he didn't recognize. The blue glow
+      illuminated strange carvings on the walls-figures that looked almost
+      human but merged with animals, their forms twisted yet graceful.
+
+      His heart pounded as he stepped inside. The air was heavy, clinging
+      to him like the weight of his own thoughts. The swamp behind him was
+      merciless, but this place... this place was different. The eerie
+      blue glow reminded him of something alive, something waiting.
+
+      He hesitated, his hands trembling as he glanced back toward the
+      misty expanse of the swamp. His chest tightened, the memory of his
+      parents' lifeless faces flashing in his mind. He wanted to turn
+      around, to run until the pain stopped, but where would he go? What
+      was left for him now?
+
+      A part of him didn't care what was inside-if it was safe, dangerous,
+      or worse. The swamp behind him was unforgiving, its dangers mirrored
+      by the distant echoes of the soldiers' voices. His body ached,
+      bruised and bloodied, every step a painful reminder of what he had
+      lost.
+
+      If the ruin could offer shelter, even for a moment, it would be
+      enough. Whether he found a place to rest, a chance to hide, or
+      simply a place to die, it didn't matter. He had nowhere else to go.
+
+      Whatever lay within might be worse than the swamp behind him-but it
+      might also offer an end to the pain, one way or another.
+
+      The jagged archway loomed before Calwyn, carved with symbols that
+      shimmered faintly in the eerie blue light. The glow seemed to seep
+      through the cracks in the ancient stone, casting long shadows across
+      the walls. He hesitated, peering into the darkness beyond, before
+      stepping inside. His footsteps echoed softly in the stillness,
+      swallowed quickly by the oppressive silence.
+
+      The air grew colder as he moved deeper, his breath visible in faint
+      puffs. The entry hall was narrow, its walls covered in moss and
+      grime, with roots snaking through cracks in the stone. Strange
+      symbols were etched along the surfaces, faintly glowing as though
+      the ruin itself still clung to life. Calwyn reached out to touch
+      one, but a sharp jolt made him pull his hand back.
+
+      "What is this place?" he muttered under his breath, shaking his
+      fingers.
+
+      As he continued, the narrow corridor opened into a larger chamber.
+      He stopped short as his eyes adjusted to the faint blue light that
+      illuminated the room. The floor was uneven, partially collapsed in
+      places, revealing gaping holes that plunged into darkness. Jagged
+      stones jutted up like broken teeth, forcing him to navigate
+      carefully.
+
+      One step sent loose pebbles tumbling into the void, the sound
+      echoing ominously. He swallowed hard and hugged the wall, feeling
+      his way forward. A faint trickle of water dripped from somewhere
+      above, the droplets catching the light and gleaming like stars in
+      the gloom.
+
+      Ahead, the remnants of what might have been a doorway blocked his
+      path. The wooden frame had long since rotted away, leaving only a
+      heavy slab of stone tilted against the wall. Calwyn pressed his
+      shoulder against it, gritting his teeth as he pushed. The stone
+      shifted slightly, scraping against the floor with a grating sound,
+      before toppling over with a loud crash that made him wince.
+
+      He froze, heart pounding, and listened. The ruin remained silent,
+      but the sound of the crash seemed to hang in the air, amplifying the
+      sense that he was intruding somewhere he didn't belong.
+
+      ### 2.5. An unsettling histrory
+
+      Beyond the doorway, the chamber widened into what could only be
+      described as a laboratory. The stale air was heavy with the scent of
+      damp stone and decay. The walls were lined with faded carvings,
+      depictions of humanoid figures merging with animals: a wolf howling,
+      an eagle in flight, a serpent coiled around a staff. Beneath each
+      figure were symbols-*Lupus*, *Aquila*, *Serpens*, and others he
+      couldn't decipher.
+
+      Calwyn's fingers hovered just above the intricate carvings etched
+      into the stone, their lines pulsing faintly with a glow that seemed
+      alive. The Aetheric patterns spiraled and twisted in ways that
+      defied logic, as if the very act of observing them pulled at the
+      edges of his mind. A low hum, almost imperceptible, resonated
+      through the air, vibrating in his chest like an echo from another
+      world.
+
+      The glow grew brighter as his gaze lingered, casting shadows that
+      danced unnaturally across the damp stone walls. Each shift in the
+      light seemed deliberate, as though the carvings were shifting their
+      focus to him. His breath hitched, and a cold prickle ran down his
+      spine. These weren't just symbols-they felt like whispers frozen in
+      time, fragments of something ancient and unknowable.
+
+      An unease settled deep in his gut, but he couldn;t pull away. It was
+      as if the patterns themselves were probing his thoughts, sifting
+      through his memories with a silent, otherworldly curiosity. He
+      clenched his fists, forcing himself to step back. The air around him
+      seemed heavier, pressing against his skin as if the ruins themselves
+      were alive, watching, waiting.
+
+      At the center of the room stood a broken table, its surface covered
+      in shattered glass and rusted tools. Something about the place felt
+      wrong, as though it had been abandoned in a hurry, its purpose left
+      unfinished.
+
+      Calwyn's eyes fell on a large, faded map pinned to the far wall. The
+      parchment was brittle, its edges curled and torn, but the details
+      were clear: a network of locations, each labeled with strange,
+      almost clinical names-*Lupinexus*, *Pantheracrypt*, *Aquilabase*.
+      The terms were unfamiliar, yet something about them stirred unease,
+      as though they were echoes of the carvings he had seen earlier.
+
+      His gaze drifted back to the walls, where the faded figures of
+      animals merged with humanoid forms: the wolf's sharp howl, the
+      eagle's wings spread wide, the serpent's sinuous coils. He realized
+      now that the carvings weren't just decorative-they were tied to the
+      map, a record of something methodical, deliberate. The names weren't
+      just labels; they were remnants of experiments, places tied to what
+      the Primekin had done here.
+
+      The thought sent a chill through him. Whatever had been studied or
+      created in this place hadn't been forgotten-it was etched into both
+      the map and the walls, an unspoken link between the cold
+      calculations of the Primekin and the forms they sought to shape.
+
+      "Is this what they were doing here?" he murmured, his fingers
+      brushing over the brittle parchment. His voice sounded hollow,
+      swallowed by the silence of the room. "Experimenting on animals...
+      or people?"
+
+      The words lingered in the stale air, unanswered and heavy. The
+      carvings on the walls seemed to watch him, their twisted forms
+      catching the faint blue glow like shadows stretching toward him. The
+      map offered no clarity, only more questions-a glimpse into something
+      ancient and unnatural, its purpose long buried but still alive in
+      the ruin's oppressive weight.
+
+      A faint hum broke the stillness, low and rhythmic, like a heartbeat
+      echoing through the chamber. Calwyn froze, the sound sending a chill
+      down his spine. Slowly, he turned toward the source. The sound
+      wasn't coming from within the room-it was emanating from behind a
+      large stone door at the far end of the chamber.
+
+      The door stood tall and unyielding, its surface carved with
+      intricate patterns that glowed faintly with the same eerie blue
+      light. Deep grooves spiraled inward toward a single circular
+      indentation at its center. The hum grew louder as Calwyn approached,
+      vibrating through the air and into his chest.
+
+      He stopped a few steps away, staring at the door in confusion.
+      Something about the glowing patterns drew his gaze, the way they
+      seemed to pulse in rhythm with the hum. He reached out hesitantly,
+      his fingers brushing the cold stone. The glow flared briefly, and he
+      felt a sharp jolt run through his arm, making him stagger back.
+
+      "What is this?" he whispered, cradling his hand. The glow dimmed,
+      but the hum persisted, low and insistent.
+
+      He took a deep breath, staring at the circular indentation. It
+      almost seemed to call to him, the patterns shifting slightly, as
+      though urging him forward. Calwyn clenched his fists. Whatever power
+      had erupted from him earlier, whatever had taken his parents-it was
+      part of him now. He had to understand it.
+
+      He reached out again, this time pressing his palm firmly against the
+      center of the door. The glow flared brighter, spreading along the
+      grooves in a cascading wave of light. Heat surged through his hand,
+      not painful but intense, and the hum rose to a deafening pitch.
+
+      The door shuddered. With a grinding groan, it began to move, stone
+      scraping against stone as it slid open. Cold air rushed out from the
+      dark space beyond, carrying with it the faint metallic tang of
+      something ancient and unnatural.
+
+      Calwyn stepped back as the hum faded into silence. The newly
+      revealed chamber beyond was bathed in dim blue light. His eyes
+      adjusted slowly, settling on the source of the glow: a cylindrical
+      pod standing against the far wall. Its glass surface was cracked and
+      smeared with age, but the faint light emanating from within gave it
+      an otherworldly presence.
+
+      ![Cylindrical pod](assets/images/cylindrical_pod.jpeg)
+
+      He approached it cautiously, each step deliberate, his boots
+      scraping against the uneven stone. The hum that had been so loud
+      moments ago was gone, replaced by an eerie stillness. The glow
+      inside the pod pulsed faintly, as if the thing within was alive-or
+      waiting.
+
+      Calwyn reached out, his hand trembling. He hesitated, instinct
+      screaming at him to turn back, to leave this place behind. But
+      curiosity, or perhaps something deeper, pulled him forward. His
+      fingertips brushed the edge of the pod.
+
+      A sharp crack split the air, shattering the fragile silence. The
+      glass burst outward with an earsplitting noise, and Calwyn stumbled
+      back, shielding his face from the fragments.
+
+      ### 2.6. The Transformation
+
+      For a moment, nothing happened. The pod stood silent, its contents
+      hidden by swirling shadows. Then, from within, something shifted.
+
+      A faint glow illuminated the interior of the pod, and Calwyn's
+      breath caught. Slumped against the back of the glass was a skeletal
+      figure-humanoid... but wrong.
+
+      A long, sharp ribcage extended outward, its skeletal structure
+      warped and uneven, as though caught between forms. The arms, long
+      and sinewy, ended in claw-like appendages, their proportions
+      unsettlingly off-balance. The skull was an unnatural fusion of human
+      and wolf-a broad, elongated shape with angular cheekbones and a
+      protruding snout. Jagged teeth lined its partially formed jaw, a
+      grotesque hint at something designed for both speech and predation.
+
+      The overall frame was eerily elegant yet undeniably monstrous, as
+      though the being's very nature was caught between two worlds-human
+      and beast-locked in a struggle that neither side had won, leaving
+      behind a form that felt incomplete, fragmented, and tragic.
+
+      Calwyn stared, transfixed by the skeletal remains. Was this... a
+      Primekin? The legends spoke of their mastery of Aether and their
+      experiments, but no one had ever seen proof. Until now.
+
+      As if sensing his presence, the glow intensified, pulsing outward
+      from the skeleton. The bones trembled, their delicate structure
+      disintegrating into fine dust that swirled in the air like a storm
+      of glowing particles. Calwyn stumbled back, coughing as the
+      shimmering dust engulfed him, clinging to his skin like static.
+
+      And then the dust began to move.
+
+      It gathered in the center of the room, coalescing into a viscous
+      substance, both liquid and light. The ooze pulsed faintly with an
+      eerie blue-green glow, quivering as though alive. Calwyn barely had
+      time to react before it surged forward, rushing across the floor
+      with unnatural speed. He tried to step back, but the substance
+      lashed out, wrapping around his legs in tendrils of sticky, glowing
+      fluid.
+
+      "Get off me!" he shouted, clawing at the tendrils. But his hands
+      passed through them as though they were made of liquid energy. The
+      ooze ignored his struggles, climbing higher, cold and electric as it
+      seeped into his skin. Tendrils forced their way into his mouth,
+      nostrils, and ears, flooding his senses with a sharp, metallic tang.
+
+      Pain erupted within him, searing and all-consuming. The Aetheric
+      substance burrowed deeper, saturating his veins with fire. He
+      collapsed to his knees, clutching his chest as his muscles
+      convulsed. His vision fractured, flashes of light and shadow
+      distorting the room.
+
+      Images filled his mind-wolves racing beneath a blood-red moon, their
+      howls blending with crackling lightning. He felt their hunger, their
+      power, their unity, but also their rage. The visions weren't his,
+      yet they burned into his consciousness, as though the Aether itself
+      was rewriting him.
+
+      The ooze surged again, fusing with him, becoming part of him. His
+      nails grew into claws, his teeth sharpened, and a guttural growl
+      escaped his throat. He slammed his claws into the stone floor,
+      leaving deep gouges as the transformation coursed through him.
+
+      "No!" he gasped. "Stop!"
+
+      The substance responded, wrapping tighter around him, binding itself
+      to his blood, his bones, his very soul. The Aether bent him to its
+      will, twisting his body, his mind, and his spirit into something
+      both human and beast.
+
+      And then, it stopped.
+
+      Calwyn slumped forward, gasping for air. The glowing tendrils were
+      gone, absorbed into his skin, but their warmth remained, pulsing
+      faintly beneath the surface. He lifted his trembling hands, the
+      claws receding into human nails, but he could still feel it-the
+      energy coiled inside him, alive and watching.
+
+      The skeleton was gone, its remains scattered as dust. Whatever had
+      been in that pod, it had left its mark. It wasn't just a curse.
+
+      It was him now.
+
+      But as the silence settled around him, the warmth beneath his skin
+      began to stir. Faint at first, like the flicker of a dying ember, it
+      quickly grew into a raging heat, spreading through his veins with
+      wild abandon. Calwyn gasped, clutching his chest as the pressure
+      mounted, sharp and searing.
+
+      "No... no!" he rasped, his voice raw, his hands clawing at the stone
+      floor. The energy demanded release, surging through him like a storm
+      threatening to break.
+
+      With a guttural roar, the Aether erupted from him in a blinding
+      wave, crackling like lightning as it ripped through the air. The
+      force slammed into the walls, carving deep gouges into the stone and
+      sending shards flying. The hum that had filled the chamber turned
+      into a deafening crescendo as the ancient machinery, overwhelmed by
+      the surge, began to fail.
+
+      The floor cracked beneath him, glowing fissures spreading outward
+      like veins. Sparks danced along the walls as chunks of the ceiling
+      began to collapse, crashing into the chamber with thunderous force.
+      Calwyn staggered to his feet, his legs unsteady, and stumbled toward
+      the archway.
+
+      Behind him, the remnants of the pod and the Primekin skeleton
+      disintegrated, consumed by the chaos. The Aetheric charge tore
+      through the ruin, its raw energy feeding the destruction. The walls
+      buckled, and the ceiling above the chamber caved in, unleashing a
+      cascade of stone and dust.
+
+      Calwyn barely made it through the archway as the ground gave way. He
+      tripped and fell, tumbling into the swamp as the ruin collapsed
+      behind him, sending a plume of debris billowing outward. The blast
+      knocked him flat, the cool swamp air rushing over him like a
+      reprieve from the oppressive heat inside.
+
+      He lay there for a moment, gasping, his chest heaving as the charge
+      finally subsided. His veins still pulsed faintly with the lingering
+      energy, and his hands trembled as he pressed them into the dirt.
+      Whatever had happened in that chamber, whatever had merged with him,
+      was no longer just part of the ruins. It was part of him.
+
+      The mist around the ruin began to fade, the oppressive hum silenced
+      at last. But the memory of what he had seen-and what he had
+      done-remained. His thoughts raced: What had the Primekin been trying
+      to achieve? What had they left behind? And what had they turned him
+      into?
+
+      As the swamp settled into quiet and the faint light of dawn pierced
+      the gloom, Calwyn's eyes drifted to the horizon. The soldiers were
+      gone, and the ruin lay in rubble, but he knew this was only the
+      beginning.
+
+      Inside him, the energy stirred again, waiting.
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Enrico Fraccaroli. All rights reserved.</p>
+    <p>This story is the intellectual property of the author. Unauthorized reproduction, distribution, or adaptation
+      is strictly prohibited and may be subject to legal action.</p>
+  </footer>
 </body>
 
 </html>

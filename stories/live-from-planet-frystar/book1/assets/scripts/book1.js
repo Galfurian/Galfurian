@@ -1,5 +1,5 @@
 // Define metadata for Arcane Fang
-const CHAPTER_TOTAL = 9;
+const CHAPTER_TOTAL = 13;
 
 document.addEventListener('keydown', function (event) {
     if (event.key === "ArrowRight") {
